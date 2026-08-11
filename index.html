@@ -1,0 +1,284 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Coffee</title>
+</head>
+
+<body>
+
+<header>
+    <h1>Cozy Coffee</h1>
+
+    <p>
+        Welcome to <strong>Cozy Coffee</strong>, a small coffee shop
+        serving freshly brewed coffee and delicious drinks every day.
+    </p>
+</header>
+
+<nav>
+    <a href="#about">About Us</a> |
+    <a href="#menu">Our Menu</a> |
+    <a href="#prices">Price List</a> |
+    <a href="#order">Order</a>
+</nav>
+
+<main>
+
+    <section id="about">
+        <h2>About Us</h2>
+
+        <img
+            src="images/Shop-1.png"
+            alt="Cozy Coffee shop"
+            width="400"
+        >
+
+        <p>
+            Cozy Coffee is a friendly coffee shop for people who love
+            good coffee and a relaxing atmosphere.
+        </p>
+
+        <p>
+            We carefully select our coffee beans and prepare every drink
+            with attention to quality and taste.
+        </p>
+
+        <h3>Why Choose Us?</h3>
+
+        <ul>
+            <li>Freshly brewed coffee</li>
+            <li>High-quality ingredients</li>
+            <li>Friendly service</li>
+            <li>Comfortable atmosphere</li>
+        </ul>
+
+        <p>
+            Learn more about coffee at
+            <a
+                href="https://www.ncausa.org/About-Coffee"
+                target="_blank"
+                rel="noopener"
+            >
+                National Coffee Association
+            </a>.
+        </p>
+    </section>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+
+        <h3>Hot Coffee</h3>
+
+        <ul>
+            <li>
+                <strong>Americano</strong> -
+                Espresso mixed with hot water for a smooth and balanced taste.
+            </li>
+
+            <li>
+                <strong>Latte</strong> -
+                Espresso with steamed milk and a light layer of foam.
+            </li>
+
+            <li>
+                <strong>Cappuccino</strong> -
+                Espresso with steamed milk and rich milk foam.
+            </li>
+        </ul>
+
+        <h3>Cold Drinks</h3>
+
+        <ul>
+            <li>
+                <strong>Iced Americano</strong> -
+                Refreshing espresso served with cold water and ice.
+            </li>
+
+            <li>
+                <strong>Iced Latte</strong> -
+                Smooth espresso with cold milk and ice.
+            </li>
+
+            <li>
+                <strong>Mocha</strong> -
+                A delicious combination of coffee, milk and chocolate.
+            </li>
+        </ul>
+    </section>
+
+    <section id="prices">
+        <h2>Price List</h2>
+
+        <p>
+            Our drinks are available in regular size.
+            Please check the table below for our menu and prices.
+        </p>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Menu</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Americano</td>
+                    <td>Hot Coffee</td>
+                    <td>Espresso with hot water</td>
+                    <td>50 THB</td>
+                </tr>
+
+                <tr>
+                    <td>Latte</td>
+                    <td>Hot Coffee</td>
+                    <td>Espresso with steamed milk</td>
+                    <td>60 THB</td>
+                </tr>
+
+                <tr>
+                    <td>Cappuccino</td>
+                    <td>Hot Coffee</td>
+                    <td>Espresso with milk foam</td>
+                    <td>60 THB</td>
+                </tr>
+
+                <tr>
+                    <td>Iced Americano</td>
+                    <td>Cold Drink</td>
+                    <td>Espresso with cold water and ice</td>
+                    <td>55 THB</td>
+                </tr>
+
+                <tr>
+                    <td>Iced Latte</td>
+                    <td>Cold Drink</td>
+                    <td>Espresso with cold milk and ice</td>
+                    <td>65 THB</td>
+                </tr>
+
+                <tr>
+                    <td>Mocha</td>
+                    <td>Cold Drink</td>
+                    <td>Coffee with milk and chocolate</td>
+                    <td>70 THB</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="order">
+        <h2>Order Your Coffee</h2>
+
+        <p>
+            Fill out the form below to send us your coffee order.
+        </p>
+
+        <form action="#" method="post">
+
+            <p>
+                <label for="name">Your Name:</label><br>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                >
+            </p>
+
+            <p>
+                <label for="email">Email:</label><br>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+            </p>
+
+            <p>
+                <label for="menu-item">Select Menu:</label><br>
+
+                <select id="menu-item" name="menu-item">
+                    <option value="americano">Americano - 50 THB</option>
+                    <option value="latte">Latte - 60 THB</option>
+                    <option value="cappuccino">Cappuccino - 60 THB</option>
+                    <option value="iced-americano">Iced Americano - 55 THB</option>
+                    <option value="iced-latte">Iced Latte - 65 THB</option>
+                    <option value="mocha">Mocha - 70 THB</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="quantity">Quantity:</label><br>
+
+                <input
+                    type="number"
+                    id="quantity"
+                    name="quantity"
+                    min="1"
+                    max="10"
+                    value="1"
+                >
+            </p>
+
+            <p>
+                <label for="message">Additional Details:</label><br>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    cols="40"
+                    placeholder="Example: Less sweet, no ice, etc."
+                ></textarea>
+            </p>
+
+            <p>
+                <button type="submit">Submit Order</button>
+            </p>
+
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    <h2>Contact Us</h2>
+
+    <p>
+        <strong>Cozy Coffee</strong>
+    </p>
+
+    <p>
+        Email:
+        <a href="mailto:cozycup@example.com">
+            cozycup@example.com
+        </a>
+    </p>
+
+    <p>
+        Phone: 02-123-4567
+    </p>
+
+    <p>
+        Open daily: 08:00 - 18:00
+    </p>
+
+    <p>
+        &copy; 2026 Cozy Coffee. All rights reserved.
+    </p>
+</footer>
+
+</body>
+
+</html>
